@@ -108,10 +108,10 @@ export const dynamicParams = false;
 const SUPPORTED_LOCALES: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'zh-TW', 'pt', 'ar', 'it', 'vi'];
 
 interface ToolPageParams {
-  params: {
+  params: Promise<{
     locale: string;
     tool: string;
-  };
+  }>;
 }
 
 /**

@@ -1508,7 +1508,10 @@
       "pagesWithMatches": "Halaman dengan hasil:",
       "selectedMatch": "Terpilih",
       "unselectedMatch": "Tidak terpilih"
+    },
+    "pdfConverter": {
+      "uploadLabel": "Unggah File PDF",
+      "uploadDescription": "Seret dan jatuhkan file PDF di sini atau klik untuk mencari."
     }
   }
 }
-

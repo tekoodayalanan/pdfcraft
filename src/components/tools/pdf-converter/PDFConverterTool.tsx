@@ -3,7 +3,7 @@
 import React, { useState, useCallback, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { marked } from 'marked';
-import { FileText, Trash2, RefreshCw, CheckCircle2, AlertCircle, Settings2, FileDownload } from 'lucide-react';
+import { FileText, Trash2, RefreshCw, CheckCircle2, AlertCircle, Settings2 } from 'lucide-react';
 import { FileUploader } from '../FileUploader';
 import { ProcessingProgress, ProcessingStatus } from '../ProcessingProgress';
 import { DownloadButton } from '../DownloadButton';

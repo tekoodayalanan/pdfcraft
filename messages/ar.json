@@ -2396,6 +2396,10 @@
       "pagesWithMatches": "صفحات بها تطابقات:",
       "selectedMatch": "محدد",
       "unselectedMatch": "غير محدد"
+    },
+    "pdfConverter": {
+      "uploadLabel": "تحميل ملف PDF",
+      "uploadDescription": "اسحب ملف PDF هنا أو انقر للتصفح."
     }
   }
 }

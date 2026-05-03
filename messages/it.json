@@ -2171,6 +2171,10 @@
       "pagesWithMatches": "Pagine con corrispondenze:",
       "selectedMatch": "Selezionato",
       "unselectedMatch": "Non selezionato"
+    },
+    "pdfConverter": {
+      "uploadLabel": "Carica file PDF",
+      "uploadDescription": "Trascina un file PDF qui o clicca per sfogliare."
     }
   }
 }

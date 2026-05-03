@@ -2168,6 +2168,10 @@
       "pagesWithMatches": "Seiten mit Übereinstimmungen:",
       "selectedMatch": "Ausgewählt",
       "unselectedMatch": "Nicht ausgewählt"
+    },
+    "pdfConverter": {
+      "uploadLabel": "PDF-Datei hochladen",
+      "uploadDescription": "Ziehen Sie eine PDF-Datei hierher oder klicken Sie, um zu durchsuchen."
     }
   }
 }

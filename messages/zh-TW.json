@@ -2167,6 +2167,10 @@
       "pagesWithMatches": "包含符合項目的頁面：",
       "selectedMatch": "已選取",
       "unselectedMatch": "未選取"
+    },
+    "pdfConverter": {
+      "uploadLabel": "上傳 PDF 檔案",
+      "uploadDescription": "將 PDF 檔案拖放到這裡，或點擊以瀏覽。"
     }
   }
 }

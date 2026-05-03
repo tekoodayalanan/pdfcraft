@@ -2243,6 +2243,10 @@
       "pagesWithMatches": "包含匹配的页面：",
       "selectedMatch": "已选中",
       "unselectedMatch": "未选中"
+    },
+    "pdfConverter": {
+      "uploadLabel": "上传 PDF 文件",
+      "uploadDescription": "将 PDF 文件拖放到此处，或点击以浏览。"
     }
   }
 }

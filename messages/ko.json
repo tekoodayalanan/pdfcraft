@@ -2168,6 +2168,10 @@
       "pagesWithMatches": "일치하는 페이지:",
       "selectedMatch": "선택됨",
       "unselectedMatch": "선택되지 않음"
+    },
+    "pdfConverter": {
+      "uploadLabel": "PDF 파일 업로드",
+      "uploadDescription": "PDF 파일을 여기에 끌어오거나 클릭하여 찾아보세요."
     }
   },
   "faqPage": {
