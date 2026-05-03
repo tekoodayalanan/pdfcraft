@@ -2268,6 +2268,31 @@ export const toolContentEn: Record<string, ToolContent> = {
       { question: 'Does it work with scanned PDFs?', answer: 'Scanned PDFs contain images, not text. Use our OCR tool first to extract text before converting to Markdown.' },
     ],
   },
+  'pdf-converter': {
+    title: 'PDF Converter',
+    metaDescription: 'Convert PDF to Markdown, plain text, and Word DOCX in one workflow, with OCR fallback for scan-only PDFs.',
+    keywords: ['pdf converter', 'pdf to markdown', 'pdf to txt', 'pdf to docx', 'ocr pdf', 'scan to text'],
+    description: `
+      <p>PDF Converter extracts text from PDF files and creates three output formats in one workflow: Markdown (.md), plain text (.txt), and editable Word (.docx).</p>
+      <p>The tool uses direct PDF text extraction first and falls back to OCR for scanned pages or image-only PDFs. All processing happens locally in your browser.</p>
+      <p>This is ideal for converting books, scanned documents, research papers, and archive PDFs into editable and web-friendly formats.</p>
+    `,
+    howToUse: [
+      { step: 1, title: 'Upload Your PDF', description: 'Drag and drop your PDF file or click to choose the file you want to convert.' },
+      { step: 2, title: 'Adjust Options', description: 'Set page range, include page numbers, and preserve line breaks if needed.' },
+      { step: 3, title: 'Convert and Download', description: 'Click Convert to generate Markdown, text, and Word files.' },
+    ],
+    useCases: [
+      { title: 'PDF Research', description: 'Turn PDF articles and reports into editable notes and documentation.', icon: 'file-text' },
+      { title: 'Scan Processing', description: 'Use OCR fallback to extract text from scanned documents.', icon: 'image' },
+      { title: 'Content Reuse', description: 'Repurpose PDF content for blogs, wikis, and Word documents.', icon: 'copy' },
+    ],
+    faq: [
+      { question: 'What outputs are available?', answer: 'The tool generates Markdown (.md), plain text (.txt), and Word (.docx) files from one PDF.' },
+      { question: 'Does it support scanned PDFs?', answer: 'Yes, it automatically falls back to OCR when direct text extraction does not find readable text.' },
+      { question: 'Is my document private?', answer: 'Yes, all conversion happens locally in your browser and files are not uploaded to any server.' },
+    ],
+  },
 
   // ==================== NEW TOOLS ====================
   'deskew-pdf': {

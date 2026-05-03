@@ -691,6 +691,18 @@ export const tools: Tool[] = [
     features: ['extract-text', 'preserve-headings', 'detect-lists', 'page-range'],
     relatedTools: ['pdf-to-json', 'pdf-to-docx', 'ocr-pdf'],
   },
+  {
+    id: 'pdf-converter',
+    slug: 'pdf-converter',
+    icon: 'file-text',
+    category: 'convert-from-pdf',
+    acceptedFormats: ['.pdf'],
+    outputFormat: 'md',
+    maxFileSize: DEFAULT_MAX_FILE_SIZE,
+    maxFiles: 1,
+    features: ['extract-text', 'ocr-fallback', 'markdown', 'txt', 'docx'],
+    relatedTools: ['pdf-to-markdown', 'pdf-to-docx', 'ocr-pdf'],
+  },
 
 
   // ==================== ORGANIZE & MANAGE ====================

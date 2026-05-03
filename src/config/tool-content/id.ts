@@ -2262,6 +2262,31 @@ export const toolContentId: Record<string, ToolContent> = {
       { question: 'Apakah ini berfungsi untuk PDF pindaian?', answer: 'PDF pindaian hanya berisi gambar, bukan teks. Gunakan alat OCR kami terlebih dahulu untuk mengekstrak teksnya sebelum dikonversi ke Markdown.' },
     ],
   },
+  'pdf-converter': {
+    title: 'PDF Converter',
+    metaDescription: 'Konversi PDF ke Markdown, teks, dan Word DOCX dalam satu workflow, dengan fallback OCR untuk PDF hasil scan.',
+    keywords: ['pdf converter', 'pdf ke markdown', 'pdf ke txt', 'pdf ke docx', 'ocr pdf', 'scan ke teks'],
+    description: `
+      <p>PDF Converter mengekstrak teks dari file PDF dan menghasilkan tiga format output dalam satu workflow: Markdown (.md), teks biasa (.txt), dan Word yang dapat diedit (.docx).</p>
+      <p>Alat ini menggunakan ekstraksi teks PDF langsung terlebih dahulu dan beralih ke OCR saat halaman hanya berisi gambar atau hasil scan. Semua pemrosesan dilakukan secara lokal di browser Anda.</p>
+      <p>Cocok untuk mengonversi buku, dokumen hasil scan, makalah riset, dan arsip PDF menjadi format yang dapat diedit dan dipublikasikan.</p>
+    `,
+    howToUse: [
+      { step: 1, title: 'Unggah PDF Anda', description: 'Tarik dan lepas file PDF Anda atau klik untuk memilih file yang ingin dikonversi.' },
+      { step: 2, title: 'Atur Opsi', description: 'Pilih rentang halaman, sertakan nomor halaman, dan pertahankan pemisah baris jika diperlukan.' },
+      { step: 3, title: 'Konversi dan Unduh', description: 'Klik Konversi untuk menghasilkan file Markdown, teks, dan Word.' },
+    ],
+    useCases: [
+      { title: 'Riset PDF', description: 'Ubah artikel dan laporan PDF menjadi catatan dan dokumentasi yang dapat diedit.', icon: 'file-text' },
+      { title: 'Pengolahan Scan', description: 'Gunakan fallback OCR untuk mengekstrak teks dari dokumen hasil scan.', icon: 'image' },
+      { title: 'Penggunaan Ulang Konten', description: 'Manfaatkan ulang konten PDF untuk blog, wiki, dan dokumen Word.', icon: 'copy' },
+    ],
+    faq: [
+      { question: 'Output apa saja yang tersedia?', answer: 'Alat ini menghasilkan Markdown (.md), teks biasa (.txt), dan Word (.docx) dari satu PDF.' },
+      { question: 'Apakah ini mendukung PDF hasil scan?', answer: 'Ya, alat ini otomatis menggunakan OCR jika ekstraksi teks langsung tidak menemukan teks yang dapat dibaca.' },
+      { question: 'Apakah dokumen saya tetap privat?', answer: 'Ya, semua konversi dilakukan secara lokal di browser Anda dan file tidak diunggah ke server manapun.' },
+    ],
+  },
 
   // ==================== NEW TOOLS ====================
   'deskew-pdf': {

@@ -78,6 +78,7 @@ import { FB2ToPDFTool } from '@/components/tools/fb2-to-pdf';
 import { DJVUToPDFTool } from '@/components/tools/djvu-to-pdf';
 import { PDFToSVGTool } from '@/components/tools/pdf-to-svg';
 import { PDFToMarkdownTool } from '@/components/tools/pdf-to-markdown';
+import { PDFConverterTool } from '@/components/tools/pdf-converter';
 import { DeskewPDFTool } from '@/components/tools/deskew';
 import { PDFBookletTool } from '@/components/tools/pdf-booklet';
 import { RasterizePDFTool } from '@/components/tools/rasterize';
@@ -102,13 +103,15 @@ import {
 } from '@/lib/seo/structured-data';
 import type { Metadata } from 'next';
 
-  const SUPPORTED_LOCALES: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'zh-TW', 'pt', 'ar', 'it', 'vi'];
+export const dynamicParams = false;
+
+const SUPPORTED_LOCALES: Locale[] = ['en', 'ja', 'ko', 'es', 'fr', 'de', 'zh', 'zh-TW', 'pt', 'ar', 'it', 'vi'];
 
 interface ToolPageParams {
-  params: Promise<{
+  params: {
     locale: string;
     tool: string;
-  }>;
+  };
 }
 
 /**
@@ -116,11 +119,14 @@ interface ToolPageParams {
  */
 export async function generateStaticParams() {
   const tools = getAllTools();
+  const toolSlugs = tools
+    .map((tool) => tool.slug)
+    .filter(Boolean);
 
-  return SUPPORTED_LOCALES.flatMap(locale =>
-    tools.map(tool => ({
+  return SUPPORTED_LOCALES.flatMap((locale) =>
+    toolSlugs.map((tool) => ({
       locale,
-      tool: tool.slug,
+      tool,
     }))
   );
 }
@@ -344,6 +350,8 @@ export default async function ToolPageRoute({ params }: ToolPageParams) {
         return <PDFToPptxTool />;
       case 'pdf-to-excel':
         return <PDFToExcelTool />;
+      case 'pdf-converter':
+        return <PDFConverterTool />;
       case 'pdf-to-markdown':
         return <PDFToMarkdownTool />;
       case 'ocr-pdf':
